@@ -44,5 +44,14 @@
     <ClCompile Include="LinkedListNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FindMissingNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CountBinaryTreeNodes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

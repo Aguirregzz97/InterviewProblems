@@ -5,6 +5,8 @@
 #include "RemoveDuplicates.cpp"
 #include "CountNumbers.cpp"
 #include "RemoveDuplicatesUnsortedList.cpp"
+#include "FindMissingNumber.cpp"
+#include "CountBinaryTreeNodes.cpp"
 
 
 int main()
@@ -16,8 +18,14 @@ int main()
 	//CountNumbers *b = new CountNumbers();
 	//b->run();
 
-	RemoveDuplicatesUnsortedList *c = new RemoveDuplicatesUnsortedList();
-	c->run();
+	//RemoveDuplicatesUnsortedList *c = new RemoveDuplicatesUnsortedList();
+	//c->run();
+
+	//FindMisssingNumber *d = new FindMisssingNumber();
+	//d->run();
+
+	CountBinaryTreeNodes* e = new CountBinaryTreeNodes();
+	e->run();
 
 	int x = 0;
 	cin >> x;

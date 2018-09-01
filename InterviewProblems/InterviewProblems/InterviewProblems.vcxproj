@@ -149,7 +149,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryTreeNode.cpp" />
+    <ClCompile Include="CountBinaryTreeNodes.cpp" />
     <ClCompile Include="CountNumbers.cpp" />
+    <ClCompile Include="FindMissingNumber.cpp" />
     <ClCompile Include="InterviewProblems.cpp" />
     <ClCompile Include="LinkedListNode.cpp" />
     <ClCompile Include="RemoveDuplicatesUnsortedList.cpp" />
