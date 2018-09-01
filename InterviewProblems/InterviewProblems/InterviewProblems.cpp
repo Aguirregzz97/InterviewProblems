@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "RemoveDuplicates.cpp"
 #include "CountNumbers.cpp"
+#include "RemoveDuplicatesUnsortedList.cpp"
 
 
 int main()
@@ -12,8 +13,11 @@ int main()
 	//RemoveDuplicates *a = new RemoveDuplicates();
 	//a->run();
 
-	CountNumbers *b = new CountNumbers();
-	b->run();
+	//CountNumbers *b = new CountNumbers();
+	//b->run();
+
+	RemoveDuplicatesUnsortedList *c = new RemoveDuplicatesUnsortedList();
+	c->run();
 
 	int x = 0;
 	cin >> x;

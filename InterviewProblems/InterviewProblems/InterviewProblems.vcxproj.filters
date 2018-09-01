@@ -38,5 +38,11 @@
     <ClCompile Include="CountNumbers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RemoveDuplicatesUnsortedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedListNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
