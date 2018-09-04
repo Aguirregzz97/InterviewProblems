@@ -7,6 +7,7 @@
 #include "RemoveDuplicatesUnsortedList.cpp"
 #include "FindMissingNumber.cpp"
 #include "CountBinaryTreeNodes.cpp"
+#include "OptimumSubstring.cpp"
 
 
 int main()
@@ -24,8 +25,12 @@ int main()
 	//FindMisssingNumber *d = new FindMisssingNumber();
 	//d->run();
 
-	CountBinaryTreeNodes* e = new CountBinaryTreeNodes();
-	e->run();
+	//CountBinaryTreeNodes* e = new CountBinaryTreeNodes();
+	//e->run();
+
+	OptimumSubstring* f = new OptimumSubstring();
+	f->run();
+
 
 	int x = 0;
 	cin >> x;

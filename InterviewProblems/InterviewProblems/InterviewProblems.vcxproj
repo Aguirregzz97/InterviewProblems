@@ -155,6 +155,7 @@
     <ClCompile Include="FindMissingNumber.cpp" />
     <ClCompile Include="InterviewProblems.cpp" />
     <ClCompile Include="LinkedListNode.cpp" />
+    <ClCompile Include="OptimumSubstring.cpp" />
     <ClCompile Include="RemoveDuplicatesUnsortedList.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
