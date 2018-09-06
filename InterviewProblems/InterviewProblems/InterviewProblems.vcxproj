@@ -153,6 +153,8 @@
     <ClCompile Include="CountBinaryTreeNodes.cpp" />
     <ClCompile Include="CountNumbers.cpp" />
     <ClCompile Include="FindMissingNumber.cpp" />
+    <ClCompile Include="GraphFunctions.cpp" />
+    <ClCompile Include="GraphNode.cpp" />
     <ClCompile Include="InterviewProblems.cpp" />
     <ClCompile Include="LinkedListNode.cpp" />
     <ClCompile Include="OptimumSubstring.cpp" />

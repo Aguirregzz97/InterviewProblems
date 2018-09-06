@@ -91,12 +91,12 @@ public:
 
 	void run() {
 
-		//Given a string and a smaller string, create the optimal substring that has the smaller string
+		//Given a string and a smaller alphabet, create the optimal substring that has all the alph
 
 		// "andres" "sda" = "andres"
 		// "andres" "a" = "a"
 		// "a" "a" = "a"
-		// "sgfkwvfjs" "wvs" = "wvfjs"  {w,v}
+		// "sgfkwvfjs" "wvs" = "wvfjs"
 		// "wwvs" "wvs" = "wvs"
 
 		testLargeString(testCaseSmall(), "a", "a");

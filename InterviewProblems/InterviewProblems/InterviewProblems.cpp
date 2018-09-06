@@ -8,7 +8,7 @@
 #include "FindMissingNumber.cpp"
 #include "CountBinaryTreeNodes.cpp"
 #include "OptimumSubstring.cpp"
-
+#include "GraphFunctions.cpp"
 
 int main()
 {
@@ -28,9 +28,11 @@ int main()
 	//CountBinaryTreeNodes* e = new CountBinaryTreeNodes();
 	//e->run();
 
-	OptimumSubstring* f = new OptimumSubstring();
-	f->run();
+	//OptimumSubstring* f = new OptimumSubstring();
+	//f->run();
 
+	GraphFunctions* g = new GraphFunctions();
+	g->run();
 
 	int x = 0;
 	cin >> x;
