@@ -32,20 +32,23 @@ public:
 		GraphNode *mostFamousN = new GraphNode(10);
 		while (s->size() > 0) {
 			GraphNode* current = s->top();
-			mp->at(current) = mp->at(current)++;
-			if (mp->at(current) > mostFamous) {
-				mostFamous = mp->at(current);
-				mostFamousN = current;
-			}
 			s->pop();
 			for (int i = 0; i < current->connections->size(); i++) {
-				if (seen->find(current) == seen->end()) {
+				if (seen->find(current->connections->at(i)) == seen->end()) {
 					s->push(current->connections->at(i));
 					mp->insert(pair<GraphNode*, int>(current->connections->at(i), 0));
 					seen->insert(current->connections->at(i));
 				}
+				if (mp->find(current->connections->at(i)) != mp->end()) {
+					mp->at(current->connections->at(i)) = mp->at(current->connections->at(i))++;
+					if (mp->at(current->connections->at(i)) > mostFamous) {
+						mostFamous = mp->at(current->connections->at(i));
+						mostFamousN = current->connections->at(i);
+					}
+				}
 			}
 		}
+		cout << mostFamous << endl;
 		return mostFamousN;
 	}
 
@@ -103,8 +106,8 @@ public:
 		root->connections->push_back(root4);
 		root->connections->push_back(root6);
 
-		root2->connections->push_back(root3);
 		root2->connections->push_back(root4);
+		root2->connections->push_back(root3);
 		root2->connections->push_back(root5);
 
 		root3->connections->push_back(root5);
@@ -112,8 +115,8 @@ public:
 		root3->connections->push_back(root2);
 
 		root4->connections->push_back(root6);
+		root4->connections->push_back(root4);
 		root4->connections->push_back(root);
-		root4->connections->push_back(root3);
 
 		root5->connections->push_back(root);
 		root5->connections->push_back(root3);
@@ -126,7 +129,7 @@ public:
 	}
 
 	void run() {
-		cout << findCelebrity(testCase1());
+		cout << findCelebrity(testCase1())->value;
 	}
 };
 
