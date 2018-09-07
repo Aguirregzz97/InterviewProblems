@@ -149,9 +149,11 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnagramStrings.cpp" />
     <ClCompile Include="BinaryTreeNode.cpp" />
     <ClCompile Include="CountBinaryTreeNodes.cpp" />
     <ClCompile Include="CountNumbers.cpp" />
+    <ClCompile Include="FillMatrixWith0.cpp" />
     <ClCompile Include="FindMissingNumber.cpp" />
     <ClCompile Include="GraphFunctions.cpp" />
     <ClCompile Include="GraphNode.cpp" />

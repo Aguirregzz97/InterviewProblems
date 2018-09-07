@@ -9,6 +9,8 @@
 #include "CountBinaryTreeNodes.cpp"
 #include "OptimumSubstring.cpp"
 #include "GraphFunctions.cpp"
+#include "AnagramStrings.cpp"
+#include "FillMatrixWith0.cpp"
 
 int main()
 {
@@ -33,6 +35,13 @@ int main()
 
 	GraphFunctions* g = new GraphFunctions();
 	g->run();
+
+	//AnagramStrings *h = new AnagramStrings();
+	//h->run();
+
+	//FillMatrixWith0 *i = new FillMatrixWith0();
+	//i->run();
+
 
 	int x = 0;
 	cin >> x;

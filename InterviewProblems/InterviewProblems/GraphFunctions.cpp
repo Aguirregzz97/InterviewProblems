@@ -4,6 +4,7 @@
 #include "GraphNode.cpp"
 #include <unordered_set>
 #include <stack>
+#include <map>
 
 using namespace std;
 
@@ -15,6 +16,38 @@ public:
 
 	}
 
+	//encontrar celebridad, nodo al que mas nodos apuntan
+	//depth first sum totals
+	//shortest path btween 2 nodes
+
+
+	GraphNode* findCelebrity(GraphNode* root) {
+		unordered_set<GraphNode*> *seen = new unordered_set<GraphNode*>();
+		map<GraphNode*, int> *mp = new map<GraphNode*, int>();
+		stack<GraphNode*> *s = new stack<GraphNode*>();
+		s->push(root);
+		seen->insert(root);
+		mp->insert(pair<GraphNode*, int>(root, 0));
+		int mostFamous = 0;
+		GraphNode *mostFamousN = new GraphNode(10);
+		while (s->size() > 0) {
+			GraphNode* current = s->top();
+			mp->at(current) = mp->at(current)++;
+			if (mp->at(current) > mostFamous) {
+				mostFamous = mp->at(current);
+				mostFamousN = current;
+			}
+			s->pop();
+			for (int i = 0; i < current->connections->size(); i++) {
+				if (seen->find(current) == seen->end()) {
+					s->push(current->connections->at(i));
+					mp->insert(pair<GraphNode*, int>(current->connections->at(i), 0));
+					seen->insert(current->connections->at(i));
+				}
+			}
+		}
+		return mostFamousN;
+	}
 
 	int calculateSumRecPrivate(GraphNode *root, unordered_set<GraphNode*> *seen) {
 		if (root == NULL) {
@@ -68,6 +101,7 @@ public:
 		root->connections->push_back(root2);
 		root->connections->push_back(root3);
 		root->connections->push_back(root4);
+		root->connections->push_back(root6);
 
 		root2->connections->push_back(root3);
 		root2->connections->push_back(root4);
@@ -92,7 +126,7 @@ public:
 	}
 
 	void run() {
-		cout << calculateSumIter(testCase1());
+		cout << findCelebrity(testCase1());
 	}
 };
 
